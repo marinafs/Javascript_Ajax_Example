@@ -48,7 +48,7 @@ jobs:
 
   CI:
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     needs: [tests]
 
     # Steps represent a sequence of tasks that will be executed as part of the job
@@ -89,7 +89,7 @@ jobs:
           
           
   Deploy_prod:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     needs: [CD]
     timeout-minutes: 3
     steps:
