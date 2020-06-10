@@ -86,7 +86,8 @@ jobs:
         run: |
           sleep 30
           curl -IS localhost:5000
-                  
+ 
+ 
   Deploy_prod:
     runs-on: self-hosted
     needs: [CD]
